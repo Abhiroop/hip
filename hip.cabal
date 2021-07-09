@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2bcc261f4e0f13e5de2a072a15771ab3eb3036cbdea6e883b7c65c347c6c5877
+-- hash: 759fde4dcb0d5f843fba52b62972d62741eec5cc01d4f427ffe013e1d34faa0b
 
 name:           hip
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      CAM
       Lib
   other-modules:
       Paths_hip
