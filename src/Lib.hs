@@ -82,10 +82,10 @@ visualise = do
 
 
 
-baz = do
-  x <- readFile "foo.txt"
-  let programTransitions = read x :: [(Instruction,Heap)]
-  pure $ length programTransitions
+-- baz = do
+--   x <- readFile "foo.txt"
+--   let programTransitions = read x :: [(Instruction,Heap)]
+--   pure $ length programTransitions
 
 drawPicture :: Map.Map Int (Instruction, Heap) -> Float -> Picture
 drawPicture m i
@@ -96,7 +96,7 @@ drawPicture m i
       Just (i, h)  -> buildHeap i h
   where
     finalHeapPic =
-        case Map.lookup 104 m of
+        case Map.lookup 34 m of
           Nothing -> buildHeap FAIL initHeap
           Just (i, h)  -> buildHeap i h
 
